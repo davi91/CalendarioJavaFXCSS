@@ -1,0 +1,3 @@
+#JavaFXTemplate
+
+Plantilla para JavaFX.

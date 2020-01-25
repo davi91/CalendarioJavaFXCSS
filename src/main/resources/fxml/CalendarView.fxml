@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dad.javafx.componentes.MonthCalendarCSS?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import java.util.ArrayList?>
+
+<GridPane fx:id="view" alignment="CENTER" hgap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../css/estilo.css" vgap="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="backBt" mnemonicParsing="false" onAction="#goBackAction" styleClass="changebutton" text="&lt;" GridPane.halignment="CENTER" />
+      <Label fx:id="yearLbl" alignment="CENTER" styleClass="year" text="2018" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+      <Button fx:id="nextBt" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#goNextAction" styleClass="changebutton" text="&gt;" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+      <MonthCalendarCSS id="m2" fx:id="m2" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m3" fx:id="m3" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m1" fx:id="m1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m4" fx:id="m4" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m5" fx:id="m5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m6" fx:id="m6" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m7" fx:id="m7" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m8" fx:id="m8" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m9" fx:id="m9" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m10" fx:id="m10" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m11" fx:id="m11" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+      <MonthCalendarCSS id="m12" fx:id="m12" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="ALWAYS" />
+   </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   
+   <fx:define>
+    <ArrayList fx:id="monthList">
+    	  <fx:reference source="m1" />
+    	  <fx:reference source="m2" />
+    	  <fx:reference source="m3" />
+    	  <fx:reference source="m4" />
+    	  <fx:reference source="m5" />
+    	  <fx:reference source="m6" />
+    	  <fx:reference source="m7" />
+    	  <fx:reference source="m8" />
+    	  <fx:reference source="m9" />
+    	  <fx:reference source="m10" />
+    	  <fx:reference source="m11" />
+    	  <fx:reference source="m12" />
+    </ArrayList>
+   </fx:define>
+</GridPane>
