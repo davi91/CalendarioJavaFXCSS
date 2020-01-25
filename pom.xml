@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dad.javafx</groupId>
-	<artifactId>CalendarioJavaFX</artifactId>
+	<artifactId>CalendarioJavaFXCSS</artifactId>
 	<version>0.0.1</version>
-	<name>CalendarioJavaFX</name>
-	<description>Calendario que usa los componentes de JavaFX de fechas</description>
+	<name>CalendarioJavaFXCSS</name>
+	<description>Calendario que usa los componentes de JavaFX de fechas aplicando estilos</description>
 
 	<properties>
 		<maven.compiler.target>11</maven.compiler.target>
