@@ -1,3 +1,3 @@
-#JavaFXTemplate
+#CalendarioCSS
 
-Plantilla para JavaFX.
+Calendario realizado con estilo.
